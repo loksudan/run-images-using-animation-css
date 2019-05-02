@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=bangers" rel="stylesheet">
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .mainimagesbg{
+      width: 100%;
+      height: 100vh;
+      background-image:url(sbd12.jpg);
+      background-size: 100% 100%;
+      position: relative;
+    }
+    .sbd img{
+      position: absolute;
+      bottom: 55px;
+      animation-name: smallbagdelivery;
+      animation-duration: 4s;
+      animation-iteration-count: 5;
+      animation-timing-function: linear;
+    }
+    @keyframes smallbagdelivery  {
+      0%{right: 0%;}
+      100%{right: 88%;}
+
+    }
+    h2{
+      color: white;
+      text-transform: uppercase;
+      font-size: 2em;
+      font-family: 'Bangers' cursive;
+      animation: smallbagdelivery 6s linear;
+      animation-delay: 3s
+      animation-iteration-count: 5;
+      position: absolute;
+      left: 45%;
+      top: 20%;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="mainimagesbg">
+      <div class="sbd">
+        <img src="sbd1.gif" width="150px">
+        <h2>Small bag Delivery</h2>
+    </div>
+  </div>
+
+  </body>
+</html>
